@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-const remove = async () => {
-    // Write your code here 
-};
-
-await remove();
-=======
 import {rm} from 'fs/promises';
 import path from 'path';
 import {fileURLToPath} from 'url';
 
-export const remove = async () => {
+const remove = async () => {
     try {
         const __filename = fileURLToPath(import.meta.url)
         const __dirname = path.dirname(__filename)
@@ -25,5 +18,4 @@ export const remove = async () => {
     }   
 };
 
-remove()
->>>>>>> 8e58319 (feat: done fs/delete.js)
+await remove()
