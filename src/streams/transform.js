@@ -18,7 +18,11 @@ const transform = async () => {
          stdin,
          innerTransform,
          stdout,
-         err => console.log(err)
+         err => {
+            if(err) {
+                console.log(err)
+            }
+         }
      )
 };
 
